@@ -326,8 +326,8 @@ def train(dataLoader, model, optimizer, epoch, logger):
 '''
 train_dataset = EG1800(dataset_root_path, train_or_test=True)
 test_dataset = EG1800(dataset_root_path, train_or_test=False)
-train_dataloader = DataLoader(train_dataset, batch_size=64, shuffle=False)
-test_dataloader = DataLoader(test_dataset, batch_size=64, shuffle=False)
+train_dataloader = DataLoader(train_dataset, batch_size=16, shuffle=False)
+test_dataloader = DataLoader(test_dataset, batch_size=16, shuffle=False)
 
 '''
 - Model
